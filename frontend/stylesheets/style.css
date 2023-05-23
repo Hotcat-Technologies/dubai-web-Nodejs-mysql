@@ -700,7 +700,7 @@ a.scheme:hover {
 }
 
 .header-v2 .header-wrap {
-	width: 1110px;
+	width: 100%;
 	margin: 0 auto;
 	padding-left: 30px;
 	position: relative;
