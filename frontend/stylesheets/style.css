@@ -3234,5 +3234,6 @@ blockquote {
 }
 .fleet_style {
 	border: 5px solid #3b427f;
+	display: flex;
 	box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
 }
