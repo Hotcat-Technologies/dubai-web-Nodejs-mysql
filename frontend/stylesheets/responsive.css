@@ -3,9 +3,7 @@
 
 /* Smaller than standard 1200 */
 @media only screen and (max-width: 1199px) {
-	.menu-extra {
-		display: none;
-	}
+
 
 #mainnav > ul > li > a {
 		padding: 0 9px 0 9px;
@@ -18,6 +16,8 @@
 
 /* Smaller than standard 992 */
 @media only screen and (max-width: 991px) {
+
+
 	.btn-menu {
 		display: block;
 	}
