@@ -192,6 +192,7 @@
 }
 .fa-search:before {
   content: "\f002";
+  margin: 0 25px 0 0;
 }
 .fa-envelope-o:before {
   content: "\f003";
