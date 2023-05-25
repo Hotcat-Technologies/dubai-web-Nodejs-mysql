@@ -703,7 +703,7 @@
 
 .general-sidebars .widget.widget_nav_menu ul li a {
     display: block;
-    padding: 15px 20px;
+    padding: 15px 65px 15px 20px;
     font-weight: bold;
     position: relative;
     color: #fff;
