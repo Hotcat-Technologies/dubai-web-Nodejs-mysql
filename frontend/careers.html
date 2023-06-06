@@ -652,10 +652,11 @@
     <script type="text/javascript" src="javascript/jquery-countTo.js"></script>
     <script type="text/javascript" src="javascript/jquery.cookie.js"></script>
     <script type="text/javascript" src="javascript/parallax.js"></script>
+    <script type="text/javascript" src="javascript/main.js"></script>
 
     <!-- load the career section content-->
     <script type="text/javascript">
-        $(document).ready(function () {
+        $(document).ready(async function () {
 
             function arrangeContent(jobTitle, shortDescription, position, endDate, ressponsibilitiess, qualifications, location) {
                 return `<div class="flat-toggle">
@@ -695,7 +696,7 @@
                 redirect: 'follow'
             };
 
-            fetch("https://api.salemalmakrani.net/api/career", requestOptions)
+            await fetch("https://api.salemalmakrani.net/api/career", requestOptions)
                 .then(response => response.json())
                 .then(result => {
                     if (result) {
@@ -805,7 +806,8 @@
 
         });
     </script>
-    <!--script type="text/javascript" src="javascript/main.js"></script-->
+
+
 
 </body>
 
