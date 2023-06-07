@@ -5850,20 +5850,13 @@ button.close {
 }
 
 .column {
-  float: left;
   width: 33.33%;
   padding: 10px;
-  height: 500px;
+  height: auto;
   background-color: #FFFFFF;
 }
 
-.column1 {
-  float: left;
-  width: 33.33%;
-  padding: 10px;
-  height: 600px;
-  background-color: #FFFFFF;
-}
+
 
 
 /* Clear floats after the columns */

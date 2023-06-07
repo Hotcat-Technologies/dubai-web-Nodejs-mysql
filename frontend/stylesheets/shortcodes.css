@@ -559,6 +559,11 @@
 
 }
 
+.entry-header-content{
+    display: flex;
+    flex-direction: column;
+}
+
 .blog-shortcode .blog-post .entry-header .entry-time {
     margin: 0 20px 0 0;
     float: left;
@@ -874,7 +879,7 @@
 }
 
 .promobox .button {
-    margin-top: 5px;
+    margin: auto 10px;
 }
 
 /* Promobox style1 */
@@ -913,7 +918,7 @@
 }
 
 .promobox.style2 .button {
-    margin-top: 3px;
+    margin-top: auto;
 }
 
 /* Flat clients

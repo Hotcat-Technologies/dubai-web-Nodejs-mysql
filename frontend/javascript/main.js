@@ -668,6 +668,7 @@
     };
 
 
+
     // Dom Ready
     $(function () {
         if (matchMedia('only screen and (min-width: 991px)').matches) {
@@ -699,3 +700,4 @@
     });
 
 })(jQuery);
+
