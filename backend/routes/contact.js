@@ -28,7 +28,7 @@ router.post('/contact', function (req, res, next) {
 
     };
     if (name && email && transport && phone && comment) {
-        const toEmail = ['jeewa228@gmail.com', 'info.malindu4@gmail.com']; //almkrani@emirates.net.ae,salemalmakranicargoco@gmail.com;
+        const toEmail = ['almkrani@emirates.net.ae', 'salemalmakranicargoco@gmail.com']; //almkrani@emirates.net.ae,salemalmakranicargoco@gmail.com;
         //data encript by cryptr
         const cryptr = new Cryptr("encriptpybo");
         const emailForMail=email;
