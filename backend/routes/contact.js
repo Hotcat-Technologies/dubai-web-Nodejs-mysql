@@ -12,8 +12,8 @@ var Cryptr = require('cryptr');
 var transporter = nodemailer.createTransport({
     service: 'gmail',
     auth: {
-        user: 'savindupasingtha@gmail.com',
-        pass: 'yourpassword'
+        user: 'samcwebinquiries@gmail.com',
+        pass: 'uasvqihwxzknasqe'
     }
 });
 
@@ -28,9 +28,10 @@ router.post('/contact', function (req, res, next) {
 
     };
     if (name && email && transport && phone && comment) {
-        const toEmail = email;
+        const toEmail = ['almkrani@emirates.net.ae', 'salemalmakranicargoco@gmail.com']; //almkrani@emirates.net.ae,salemalmakranicargoco@gmail.com;
         //data encript by cryptr
         const cryptr = new Cryptr("encriptpybo");
+        const emailForMail=email;
         email = cryptr.encrypt(email);
         //const de = cryptr.decrypt(en);
         var query = `INSERT INTO contact (name, email, transport, phone, comment, subject) VALUES ('${name}','${email}','${transport}','${phone}','${comment}','${subject}')`;
@@ -40,10 +41,14 @@ router.post('/contact', function (req, res, next) {
                     //sent mail
                     var email_sending_status = false;
                     var mailOptions = {
-                        from: 'savindupasingtha@gmail.com',//company email
+                        from: 'samcwebinquiries@gmail.com',//company email
                         to: toEmail,
                         subject: subject.toString(),
-                        text: comment.toString()
+                        text: `                Name: ${name.toString()}
+                Email: ${emailForMail.toString()}
+                Transport: ${transport.toString()}
+                Phone: ${phone.toString()}
+                Comment: ${comment.toString()}`
                     };
 
                     transporter.sendMail(mailOptions, function (error, info) {
