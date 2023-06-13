@@ -2079,6 +2079,8 @@ a.scheme:hover {
   	border-bottom: 3px solid #32bfc0;
 }
 
+
+
 .widget ul {
   	margin: 0;
   	padding: 0;
@@ -2136,6 +2138,10 @@ a.scheme:hover {
 .widget.widget_categories label {
   	margin-bottom: 10px;
   	display: inline-block;
+}
+
+.menu-footer-menu>li{
+	float: none;
 }
 
 .widget.widget_archive ul {
@@ -2466,7 +2472,6 @@ blockquote {
 
 .footer-widgets .widget.widget_nav_menu ul li {
     width: 50%;
-    float: left;
     position: relative;
 }
 
