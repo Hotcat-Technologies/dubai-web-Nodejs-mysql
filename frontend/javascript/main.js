@@ -146,7 +146,7 @@
             return false;
         })
 
-        $('.mainnav ul > li > a').on('click', function () {
+        $(`.mainnav ul > li > a`).on('click', function () {
             $(this).addClass('active').parent().siblings().children().removeClass('active');
         });
     }
