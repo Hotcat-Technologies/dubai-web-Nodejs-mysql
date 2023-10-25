@@ -412,7 +412,7 @@
                     redirect: 'follow'
                 };
 
-                fetch("http://localhost/api/news", requestOptions)
+                fetch("https://admin.salemalmakrani.net/api/news", requestOptions)
                     .then(response => response.json())
                     .then(result => {
                         alert(result.status.data_saved ? "Submited !" : "Error !");
