@@ -36,7 +36,7 @@ router.get('/news-list.ejs', async function (req, res, next) {
   var data = [];
   api_service.getData("http://localhost/api/news")
     .then((resp) => {
-      data = resp.data?.data;
+      data = resp.data;
       if (data.length > 0) {
         res.render('layouts/news-list', { renderData: data });
       } else {
