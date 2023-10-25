@@ -6,13 +6,11 @@ var logger = require('morgan');
 var cors = require('cors');
 var app = express();
 
-
 var indexRouter = require('./routes/index');
 var contactRouter = require('./routes/contact');
 var newsRouter = require('./routes/news');
 var registerRouter = require('./routes/register');
 var careerRouter = require('./routes/career');
-
 
 // View Engine Setup
 //Tempalte engine == jage ? app.set('view engine', 'jade');
