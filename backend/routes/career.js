@@ -62,6 +62,7 @@ router.get('/career', function (req, res, next) {
 
         })
         .catch((err) => {
+            console.log("error"+err);
             if (err) {
                 res.status(404).send({ status: false });
             }
