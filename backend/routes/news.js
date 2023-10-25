@@ -52,7 +52,6 @@ router.get('/news', function (req, res, next) {
     var query = "SELECT author,category,shortDescription,newsHead,contentData,blockQuote,image FROM news ";
     QueryExecute(query)
         .then((result) => {
-            console.log(result)
             if (result) {
                 res.status(200).send({ status: true, data: result });
             } else {
