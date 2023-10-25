@@ -58,7 +58,7 @@ router.get('/email-inbox.ejs', function (req, res, next) {
   var data = [];
   api_service.getData("http://localhost/api/career")
     .then((resp) => {
-      data = resp.data?.data;
+      data = resp.data;
       if (data.length > 0) {
         res.render('layouts/email-inbox.ejs', { renderData: data });
       } else {
