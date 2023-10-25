@@ -17,7 +17,7 @@ router.get('/index.ejs', function (req, res, next) {
 
 router.get('/', async function (req, res, next) {
   var data = [];
-  api_service.getData("http://localhost/api/news")
+  api_service.getData("http://51.20.143.83/api/news")
     .then((resp) => {
       data = resp.data?.data;
       if (data.length > 0) {
