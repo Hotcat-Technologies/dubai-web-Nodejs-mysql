@@ -19,7 +19,7 @@ router.get('/', async function (req, res, next) {
   var data = [];
   api_service.getData("http://51.20.143.83/api/news")
     .then((resp) => {
-      data = resp.data?.data;
+      data = resp.data;
       if (data.length > 0) {
         res.render('layouts/news-list', { renderData: data });
       } else {
