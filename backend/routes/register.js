@@ -11,7 +11,7 @@ router.post("/v", function (req, res, next) {
 
 router.post('/register', function (req, res, next) {
     var { email, username, password } = {
-        email: req.body.email.toString(), username: req.body?.username.toString(), password: req.body?.password.toString()
+        email: req.body.email.toString(), username: req.body.username.toString(), password: req.body.password.toString()
     };
 
     if (email && password && username) {
