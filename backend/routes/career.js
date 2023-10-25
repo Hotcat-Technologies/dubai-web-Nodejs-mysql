@@ -14,13 +14,13 @@ router.post('/career', function (req, res, next) {
         resposibilities,
         qualifications}
         = {
-        jobTitle: req.body.jobTitle.toString(),
-        location: req.body.location.toString(),
-        shortDescription: req.body.shortDescription.toString(),
-        positions: req.body.positions.toString(),
-        endDate: req.body.endDate.toString(),
-        resposibilities: req.body.resposibilities.toString(),
-        qualifications: req.body.qualifications.toString(),
+        jobTitle: req.body?.jobTitle.toString(),
+        location: req.body?.location.toString(),
+        shortDescription: req.body?.shortDescription.toString(),
+        positions: req.body?.positions.toString(),
+        endDate: req.body?.endDate.toString(),
+        resposibilities: req.body?.resposibilities.toString(),
+        qualifications: req.body?.qualifications.toString(),
     };
     if (jobTitle &&
         shortDescription &&

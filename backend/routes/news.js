@@ -14,13 +14,13 @@ router.post('/news', function (req, res, next) {
         newsHead,
         contentData,
         blockQuote, image  } = {
-        author: req.body.author.toString(),
-        category: req.body.category.toString(),
-        shortDescription: req.body.shortDescription.toString(),
-        newsHead: req.body.newsHead.toString(),
-        contentData: req.body.contentData.toString(),
-        blockQuote: req.body.blockQuote.toString(),
-        image: req.body.image.toString()
+        author: req.body?.author.toString(),
+        category: req.body?.category.toString(),
+        shortDescription: req.body?.shortDescription.toString(),
+        newsHead: req.body?.newsHead.toString(),
+        contentData: req.body?.contentData.toString(),
+        blockQuote: req.body?.blockQuote.toString(),
+        image: req.body?.image.toString()
 
     };
     if (author &&

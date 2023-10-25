@@ -19,12 +19,12 @@ var transporter = nodemailer.createTransport({
 
 router.post('/contact', function (req, res, next) {
     var { name, email, transport, phone, comment, subject } = {
-        name: req.body.name.toString(),
-        email: req.body.email.toString(),
-        transport: req.body.transport.toString(),
-        phone: req.body.phone.toString(),
-        comment: req.body.comment.toString(),
-        subject: req.body.subject.toString()
+        name: req.body?.name.toString(),
+        email: req.body?.email.toString(),
+        transport: req.body?.transport.toString(),
+        phone: req.body?.phone.toString(),
+        comment: req.body?.comment.toString(),
+        subject: req.body?.subject.toString()
 
     };
     if (name && email && transport && phone && comment) {

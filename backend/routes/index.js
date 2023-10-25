@@ -19,7 +19,7 @@ router.get('/', async function (req, res, next) {
   var data = [];
   api_service.getData("http://localhost/api/news")
     .then((resp) => {
-      data = resp.data;
+      data = resp.data?.data;
       if (data.length > 0) {
         res.render('layouts/news-list', { renderData: data });
       } else {
@@ -36,7 +36,7 @@ router.get('/news-list.ejs', async function (req, res, next) {
   var data = [];
   api_service.getData("http://localhost/api/news")
     .then((resp) => {
-      data = resp.data;
+      data = resp.data?.data;
       if (data.length > 0) {
         res.render('layouts/news-list', { renderData: data });
       } else {
@@ -58,7 +58,7 @@ router.get('/email-inbox.ejs', function (req, res, next) {
   var data = [];
   api_service.getData("http://localhost/api/career")
     .then((resp) => {
-      data = resp.data;
+      data = resp.data?.data;
       if (data.length > 0) {
         res.render('layouts/email-inbox.ejs', { renderData: data });
       } else {
